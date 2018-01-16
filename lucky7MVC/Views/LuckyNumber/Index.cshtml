@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+      
+   <!--  //variable Display to be used in the style attribute of the img element to show or hide the image
+     //  var Display = "none";
+     //var _lucky = 7;-->
+        
+       <!--  /*    var rnd = new System.Random();
+              var num1 = rnd.Next(5, 9);
+              var num2 = rnd.Next(5, 9);
+              var num3 = rnd.Next(5, 9);*/-->
+          
+        <p> 
+           <!-- <button onclick="history.go(0)">Spin</button>-->
+            <div>@ViewBag.Num1</div><div>@ViewBag.Num2</div><div>@ViewBag.Num3</div>
+            <br />
+
+            <h1>Lucky Seven</h1>
+            <!--The ViewBag will be none or block to display the image if the lucky number is hit-->
+            <img src="~/images/PayCoins.jpg" style="display:@ViewBag.Display" alt="coins" />
+        </p>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
